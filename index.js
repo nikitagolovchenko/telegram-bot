@@ -1,13 +1,8 @@
 // npm i node-telegram-bot-api nodemon
 const TelegramApi = require('node-telegram-bot-api');
-const Promise = require('bluebird');
 const {gameOptions, againOptions} = require('./options');
 
-Promise.config({
-  cancellation: true
-});
-
-const token = '1871327654:AAEM55oJt0P7GQNI-OwaS6Dz4DMKmFoZG8A';
+const token = '1871327654:AAEDGMSoT97I6lNa3EUWCibOYL8c6ytbEho';
 
 const bot = new TelegramApi(token, { polling: true });
 
