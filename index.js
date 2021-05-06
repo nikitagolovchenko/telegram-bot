@@ -7,7 +7,7 @@ Promise.config({
   cancellation: true
 });
 
-const token = '1871327654:AAHMwCo97cqRfg4S7lPGDNqgEKeKjsMb1yI';
+const token = '1871327654:AAEM55oJt0P7GQNI-OwaS6Dz4DMKmFoZG8A';
 
 const bot = new TelegramApi(token, { polling: true });
 
