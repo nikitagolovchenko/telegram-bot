@@ -2,7 +2,7 @@
 const TelegramApi = require('node-telegram-bot-api');
 const {gameOptions, againOptions} = require('./options');
 
-const token = '1871327654:AAGw0MZOzfnwzZv0G3-vBecVO2usO289QQ0';
+const token = '1871327654:AAHMwCo97cqRfg4S7lPGDNqgEKeKjsMb1yI';
 
 const bot = new TelegramApi(token, { polling: true });
 
@@ -54,7 +54,6 @@ const start = () => {
   bot.on('callback_query', async msg => {
     const chatId = msg.message.chat.id;
     const data = msg.data;
-    console.log(chats[chatId], data);
 
     if (data === '/again') {
       return startGame(chatId);
